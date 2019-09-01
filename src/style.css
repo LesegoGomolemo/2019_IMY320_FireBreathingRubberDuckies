@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem; /*1 rem is 16 pixels or the size of 'html'*/
+    background: rgb(2,0,36);
+    background: linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(1,22,39,1) 13%, rgba(1,88,115,1) 49%, rgba(0,212,255,1) 100%);
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px; /*we want this to shrink depending on the width*/
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+.main-header {
+    height: 55hv; /*viewport height -- 55 of them*/
+    /*we want to center everything vertically and horizantally*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-header h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.main-header h1 span {
+    color: #b50d10;
+}
+
+.main-header p {
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0.5;
+}
+
+img {
+    width: 100%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*two even columns; alt: repeat(2, 1fr)*/
+    grid-gap: 2rem;
+    background: #f1f1f1;
+    margin-bottom: 2rem;
+}
+
+.card h3 {
+    margin-bottom: 2rem;
+}
+
+.card img {
+    height: 400px;
+}
+
+.card > div { /*adding style to the direct div and not the other ones inside*/
+    padding: 2rem;
+}
+
+.card:nth-child(even) img {
+    order: 2;
+}
+
+.btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+    .card {
+        display: block; /*so that the images stack on top of each other as soon as we reach 700px*/
+    }
+}
