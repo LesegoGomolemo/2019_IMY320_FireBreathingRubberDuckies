@@ -13,10 +13,7 @@
     </head>
 
     <body>
-        <header class="main-header">
-            <h1><%= title %></h1>
-            <p>"ERP Mobile Application project by Tenacious Technicians for EPI Use."</p>
-        </header>
+        <%- include ./layout/header.ejs %>
 
         <main class="container">
             <section class="card">
@@ -82,6 +79,8 @@
                 offset: 400,
                 duration: 1000
             });
-        </script>       
+        </script>   
+        
+        <%- include ./layout/footer.ejs %>
     </body>
 </html>

@@ -13,10 +13,7 @@
     </head>
 
     <body>
-        <header class="main-header">
-            <h1><span><%= title %></h1>
-            <p>"This project will be revealed after the raid on Area 51."</p>
-        </header>
+        <%- include ./layout/header.ejs %>
 
         <main class="container">
             <section class="card">
@@ -82,6 +79,8 @@
                 offset: 400,
                 duration: 1000
             });
-        </script>       
+        </script>
+        
+        <%- include ./layout/footer.ejs %>
     </body>
 </html>
