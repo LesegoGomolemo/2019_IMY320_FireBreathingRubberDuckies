@@ -3,19 +3,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">  
-        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-        <title><%= title %></title>
+        <%- include ./layout/headerimports.ejs %>
     </head>
 
     <body>
         <%- include ./layout/header.ejs %>
 
-        <main class="container">
+        <main id="theGame" class="container">
             <section class="card">
                 <img src="images/botic/botic_1.png" alt="">
                 <div>

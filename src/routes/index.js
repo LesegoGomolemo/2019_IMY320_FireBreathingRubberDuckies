@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
                         firstWordTitle: 'Fire',
                         restOfTitle: ' Breathing Rubber Duckies',
                         pageDescription: '"We could all be reading a book right now, but lets watch these rubber duckies spit fire."',
-                        leftPage: 'Something',
-                        leftAddress: '/',
+                        leftPage: 'Our Game',
+                        leftAddress: '/game',
                         thisHeading: 'Meet The Team',
                         downAddress: '#team',
                         rightPage: 'Our Projects',
@@ -18,16 +18,25 @@ router.get('/', function(req, res, next) {
 
 /* GET game page. */
 router.get('/game', function(req, res, next) {
-  res.render('game', { title: 'Coolest Game Ever' , quote: 'We could all be reading a book right now, but lets play a few more rounds.'});
+  res.render('game', { title: 'Our Game',
+                        showHome: '',
+                        firstWordTitle: 'Our',
+                        restOfTitle: ' Game',
+                        pageDescription: 'Our non-existant video game :)',
+                        leftPage: 'Short Horror Movie',
+                        leftAddress: '/horrorShort',
+                        thisHeading: 'About the game',
+                        downAddress: '#theGame',
+                        rightPage: 'Meet the team',
+                        rightAddress: '/'});
 });
-
 /* GET project X. */
 router.get('/projectX', function(req, res, next) {
   res.render('projectX', { title: 'Project X' , quote: 'This project will be revealed after the raid on Area 51.'});
 });
 
 /* GET horror short page. */
-router.get('/horror', function(req, res, next) {
+router.get('/horrorShort', function(req, res, next) {
   res.render('horrorShort', { title: 'Our Projects',
                               showHome: '',
                               firstWordTitle: 'No',
@@ -37,8 +46,8 @@ router.get('/horror', function(req, res, next) {
                               leftAddress: '/projects',
                               thisHeading: 'About the movie',
                               downAddress: '#movie',
-                              rightPage: 'Something',
-                              rightAddress: '/'});
+                              rightPage: 'Our Game',
+                              rightAddress: '/game'});
 });
 
 /* GET botic project page. */
