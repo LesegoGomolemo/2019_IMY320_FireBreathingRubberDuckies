@@ -105,6 +105,10 @@ img {
   border-radius: 10px;
 }
 
+/* .navbar.transparent.fixed-top {
+  background: rgba(0,0,0,0);
+} */
+
 .fullscreen {
   position: relative;
   height: 100vh;
@@ -112,6 +116,10 @@ img {
 }
 
 .center {
+  text-align: center;
+}
+
+.center-arrow {
   position: absolute; /* I know terrible way of doing it*/
   top: 25vh;
   bottom: 50vh;
@@ -145,16 +153,18 @@ img {
   color: #000
 }
 
+.white {
+  color: #fff;
+}
+
 .right-arrow {
   position: absolute; /*I know terrible way of doing it*/
-  /* text-align: right; */
   display: contents;
   right: 5vw;
 }
 
 .left-arrow {
   position: absolute; /*I know terrible way of doing it*/
-  /* text-align: right; */
   display: contents;
   left: 5vw;
 }

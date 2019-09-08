@@ -4,6 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Fire Breathing Rubber Duckies',
+                        showHome: 'style= visibility:hidden',
                         firstWordTitle: 'Fire',
                         restOfTitle: ' Breathing Rubber Duckies',
                         pageDescription: '"We could all be reading a book right now, but lets watch these rubber duckies spit fire."',
@@ -34,6 +35,7 @@ router.get('/horror', function(req, res, next) {
 router.get('/botic', function(req, res, next) {
   // res.render('botic', { title: 'Botic: Privacy aware chatbot' , quote: 'Botic Privacy Chatbot, by Alabama Liquid Snakes for EPI USE Labs'});
   res.render('botic', { title: 'Our Projects',
+                        showHome: '',
                         firstWordTitle: 'Our',
                         restOfTitle: ' Projects',
                         pageDescription: 'Our web development projects',
