@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
                         thisHeading: 'Meet The Team',
                         downAddress: '#team',
                         rightPage: 'Our Projects',
-                        rightAddress: '/botic'});
+                        rightAddress: '/projects'});
 });
 
 /* GET game page. */
@@ -28,13 +28,23 @@ router.get('/projectX', function(req, res, next) {
 
 /* GET horror short page. */
 router.get('/horror', function(req, res, next) {
-  res.render('horrorShort', { title: 'No Strings Attached' , quote: 'Horror short written and directed by the Fire Breathing Rubber Duckies'});
+  res.render('horrorShort', { title: 'Our Projects',
+                              showHome: '',
+                              firstWordTitle: 'No',
+                              restOfTitle: ' Strings Attached',
+                              pageDescription: 'Just when you thought puppets wernt living',
+                              leftPage: 'Our Projects',
+                              leftAddress: '/projects',
+                              thisHeading: 'About the movie',
+                              downAddress: '#movie',
+                              rightPage: 'Something',
+                              rightAddress: '/'});
 });
 
 /* GET botic project page. */
-router.get('/botic', function(req, res, next) {
+router.get('/projects', function(req, res, next) {
   // res.render('botic', { title: 'Botic: Privacy aware chatbot' , quote: 'Botic Privacy Chatbot, by Alabama Liquid Snakes for EPI USE Labs'});
-  res.render('botic', { title: 'Our Projects',
+  res.render('projects', { title: 'Our Projects',
                         showHome: '',
                         firstWordTitle: 'Our',
                         restOfTitle: ' Projects',
@@ -43,8 +53,8 @@ router.get('/botic', function(req, res, next) {
                         leftAddress: '/',
                         thisHeading: 'Our Projects',
                         downAddress: '#scroll-to',
-                        rightPage: 'Something',
-                        rightAddress: '/'});
+                        rightPage: 'Short Horror Movie',
+                        rightAddress: '/horrorShort'});
 });
 
 /* GET ERP Ranger Mobile App project page. */
