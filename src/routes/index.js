@@ -3,7 +3,16 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Fire Breathing Rubber Duckies' });
+  res.render('index', { title: 'Fire Breathing Rubber Duckies',
+                        firstWordTitle: 'Fire',
+                        restOfTitle: ' Breathing Rubber Duckies',
+                        pageDescription: '"We could all be reading a book right now, but lets watch these rubber duckies spit fire."',
+                        leftPage: 'Something',
+                        leftAddress: '/',
+                        thisHeading: 'Meet The Team',
+                        downAddress: '#team',
+                        rightPage: 'Our Projects',
+                        rightAddress: '/botic'});
 });
 
 /* GET game page. */
@@ -23,7 +32,17 @@ router.get('/horror', function(req, res, next) {
 
 /* GET botic project page. */
 router.get('/botic', function(req, res, next) {
-  res.render('botic', { title: 'Botic: Privacy aware chatbot' , quote: 'Botic Privacy Chatbot, by Alabama Liquid Snakes for EPI USE Labs'});
+  // res.render('botic', { title: 'Botic: Privacy aware chatbot' , quote: 'Botic Privacy Chatbot, by Alabama Liquid Snakes for EPI USE Labs'});
+  res.render('botic', { title: 'Our Projects',
+                        firstWordTitle: 'Our',
+                        restOfTitle: ' Projects',
+                        pageDescription: 'List of our web development projects',
+                        leftPage: 'Meet The Team',
+                        leftAddress: '/',
+                        thisHeading: 'Our Projects',
+                        downAddress: '#scroll-to',
+                        rightPage: 'Something',
+                        rightAddress: '/'});
 });
 
 /* GET ERP Ranger Mobile App project page. */

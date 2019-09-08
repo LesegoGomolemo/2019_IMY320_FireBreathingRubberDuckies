@@ -7,19 +7,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">  
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
         <title><%= title %></title>
     </head>
 
     <body>
-        <header class="main-header">
-            <h1><span>Fire</span> Breathing Rubber Duckies</h1>
-            <p>"We could all be reading a book right now, but lets watch these rubber duckies spit fire."</p>
-        </header>
+        <%- include ./layout/header.ejs %>
+        <!-- <div class="fullscreen">
+            <div class="center">
+                <header class="main-header">
+                    <h1><span>Fire</span> Breathing Rubber Duckies</h1>
+                    <p>"We could all be reading a book right now, but lets watch these rubber duckies spit fire."</p>
+                </header>
+            </div>
+            <div class="scroll">
+                <a href="#team" class="black">
+                    <div style="display: inline-block">
+                        <p class="meet-team" style="font-size:2vh">Scroll to meet the team</p>
+                        <br>
+                        <i class="fa fa-angle-double-down" style="font-size:6vh"></i>
+                    </div>
+                </a>
+                <a href="/botic" class="black">
+                    <div class="right-arrow" style="display: inline-block">
+                        <p class="next-page" style="font-size:2vh">Our projects</p>
+                        <i class="fa fa-angle-double-right" style="font-size:6vh"></i>
+                    </div>
+                </a>
+            </div>
+        </div> -->
 
-        <main class="container">
-            <section class="card">
+        <main id="team" class="container">
+            <section class="card" data-aos="fade-right">
                 <img src="images/botic/botic_1.png" alt="">
                 <div>
                     <h3>

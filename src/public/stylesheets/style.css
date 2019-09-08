@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,7 @@ a {
   margin: auto;
   overflow: auto;
   padding: 0 2rem;
+  padding-top: 5vh;
 }
 
 .main-header {
@@ -35,11 +37,11 @@ a {
 }
 
 .main-header h1 {
-  font-size: 4rem;
+  font-size: 4vw;
   margin-bottom: 2rem;
   line-height: 1.2;
   color: #fff;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .main-header h1 span {
@@ -47,9 +49,9 @@ a {
 }
 
 .main-header p {
-  font-size: 2rem;
+  font-size: 2vw;
   color: #fff;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 img {
@@ -97,4 +99,57 @@ img {
   .card {
       display: block; /*so that the images stack on top of each other as soon as we reach 700px*/
   }
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.fullscreen {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.center {
+  position: absolute; /* I know terrible way of doing it*/
+  top: 25vh;
+  bottom: 50vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.scroll {
+  color: #000;
+  position: absolute; /* I know terrible way of doing it*/
+  text-align: center;
+  width: 100%;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.meet-team {
+  text-align: center;
+  display: contents;
+}
+
+.black {
+  color: #000
+}
+
+.right-arrow {
+  position: absolute; /*I know terrible way of doing it*/
+  /* text-align: right; */
+  display: contents;
+  right: 5vw;
+}
+
+.left-arrow {
+  position: absolute; /*I know terrible way of doing it*/
+  /* text-align: right; */
+  display: contents;
+  left: 5vw;
 }

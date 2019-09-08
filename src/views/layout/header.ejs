@@ -1,5 +1,29 @@
-<!--This is the common page header-->
-<header class="main-header">
-    <h1><%= title %></h1>
-    <p><%= quote %></p>
-</header>
+<div id="top-page" class="fullscreen">
+    <div class="center">
+        <header class="main-header">
+            <h1><span><%= firstWordTitle %></span><%= restOfTitle%></h1>
+            <p><%= pageDescription %></p>
+        </header>
+    </div>
+    <div class="scroll">
+        <a href=<%= leftAddress %>>
+            <div class="left-arrow" style="display: inline-block">
+                <p class="next-page" style="font-size:2vh; color: #ffffff;"><%= leftPage %></p>
+                <i class="fa fa-angle-double-left" style="font-size:6vh; color: #40E0D0;"></i>
+            </div>
+        </a>
+        <a href=<%= downAddress %>>
+            <div style="display: inline-block">
+                <p class="meet-team" style="font-size:2vh; color: #ffffff;"><%= thisHeading %></p>
+                <br>
+                <i class="fa fa-angle-double-down" style="font-size:6vh; color: #40E0D0;"></i>
+            </div>
+        </a>
+        <a href=<%= rightAddress %>>
+            <div class="right-arrow" style="display: inline-block">
+                <p class="next-page" style="font-size:2vh; color: #ffffff;"><%= rightPage %></p>
+                <i class="fa fa-angle-double-right" style="font-size:6vh; color: #40E0D0;"></i>
+            </div>
+        </a>
+    </div>
+</div>
