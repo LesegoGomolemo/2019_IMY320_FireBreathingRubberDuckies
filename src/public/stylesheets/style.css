@@ -102,6 +102,7 @@ img {
 }
 
 .card {
+  overflow: hidden;
   border-radius: 10px;
 }
 
