@@ -36,7 +36,7 @@ router.get('/botic', function(req, res, next) {
   res.render('botic', { title: 'Our Projects',
                         firstWordTitle: 'Our',
                         restOfTitle: ' Projects',
-                        pageDescription: 'List of our web development projects',
+                        pageDescription: 'Our web development projects',
                         leftPage: 'Meet The Team',
                         leftAddress: '/',
                         thisHeading: 'Our Projects',
