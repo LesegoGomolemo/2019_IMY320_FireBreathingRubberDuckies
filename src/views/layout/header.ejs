@@ -1,0 +1,63 @@
+<nav class="navbar transparent navbar-expand-lg fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        </ul>
+		<a class="navbar-brand color-fade-white center" id='scroll-to-top' href="#top-page" style="display: none">
+			<div class='center circle black-text'>
+				<i class='fa fa-angle-up color-fade-icon-white opa' style='font-size:48px;'></i>
+			</div>
+            <p class="black-text">Back to top</p>
+        </a>
+        <a class="navbar-brand center color-fade" href="/" <%= showHome %>>
+            <i class='fa fa-home color-fade-icon' style='font-size:48px;'></i>
+            <br>
+            <p class="black-text">Home</p>
+        </a>
+    </div>
+</nav>
+
+<div id="top-page" class="fullscreen">
+    <div class="center-arrow">
+        <header class="main-header">
+            <h1><span><%= firstWordTitle %></span><%= restOfTitle%></h1>
+            <p><%= pageDescription %></p>
+        </header>
+    </div>
+    <div class="scroll">
+        <a href=<%= leftAddress %>>
+            <div class="left-arrow color-fade" style="display: inline-block; width: 9vw">
+                <p class="next-page" style="font-size:2vh; color: #ffffff;"><%= leftPage %></p>
+                <i class="fa fa-angle-double-left color-fade-icon" style="font-size:6vh;"></i>
+            </div>
+        </a>
+        <a href=<%= downAddress %>>
+            <div class="color-fade" style="display: inline-block">
+                <p class="meet-team" style="font-size:2vh; color: #ffffff;"><%= thisHeading %></p>
+                <br>
+                <i class="fa fa-angle-double-down color-fade-icon" style="font-size:6vh;"></i>
+            </div>
+        </a>
+        <a href=<%= rightAddress %>>
+            <div class="right-arrow color-fade" style="display: inline-block; width: 9vw">
+                <p class="next-page" style="font-size:2vh; color: #ffffff;"><%= rightPage %></p>
+                <i class="fa fa-angle-double-right color-fade-icon" style="font-size:6vh;"></i>
+            </div>
+        </a>
+    </div>
+</div>
+
+<script>
+    var mybutton = document.getElementById("scroll-to-top");
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+</script>

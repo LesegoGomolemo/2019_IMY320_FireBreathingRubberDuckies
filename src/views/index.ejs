@@ -1,77 +1,84 @@
+<!--This is the Landing Page-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">  
-        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-        <title><%= title %></title>
+        <%- include ./layout/headerimports.ejs %>
     </head>
 
     <body>
-        <header class="main-header">
-            <h1><span>Fire</span> Breathing Rubber Duckies</h1>
-            <p>"We could all be reading a book right now, but lets watch these rubber duckies spit fire."</p>
-        </header>
+        <%- include ./layout/header.ejs %>
 
-        <main class="container">
-            <section class="card">
-                <img src="images/botic/botic_1.png" alt="">
+        <main id="team" class="container">
+			<section class="card" data-aos="fade-right">
+				<img class = "profilePic" src="images/team/justin.jpg" alt="">
+				<div>
+					<h3>
+						<b>About Us</b>
+					</h3>
+					<p>I am a final year Computer Science student at the University of Pretoria. I enjoy learning new and more efficient ways to solve problems. My main interests lie in the fields of Artificial Intelligence and Software Engineering.</p>
+					<div class="links">
+						<a target="_blank" href="https://github.com/JustinG123"><img src="images/links/github.png" alt="" class="linkImg"></a>
+						<a target="_blank" href="https://www.linkedin.com/in/justin-grenfell-7b6b6915b/"> <img src="images/links/linkedIn.png" alt="" class="linkImg linkedIn"></a>
+					</div>
+				</div>
+			</section>
+				
+            <section class="card" data-aos="fade-right">
+                <img class = "profilePic" src="images/team/justin.jpg" alt="">
                 <div>
                     <h3>
-                        Project Image One
+						<b>Justin Grenfell</b>
                     </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia eveniet veritatis perferendis dolor doloribus possimus ratione quam ipsa ut non laudantium in, unde earum id fugiat nihil vel delectus!</p>
-                    <a href="#" class="btn">More Info</a>
-                </div>
+                    <p>I am a final year Computer Science student at the University of Pretoria. I enjoy learning new and more efficient ways to solve problems. My main interests lie in the fields of Artificial Intelligence and Software Engineering.</p>
+					<div class="links">
+						<a target="_blank" href="https://github.com/JustinG123"><img src="images/links/github.png" alt="" class="linkImg"></a>
+						<a target="_blank" href="https://www.linkedin.com/in/justin-grenfell-7b6b6915b/"> <img src="images/links/linkedIn.png" alt="" class="linkImg linkedIn"></a>
+					</div>
+				</div>
             </section>
 
-            <section class="card" data-aos="fade-left">
-                <img src="images/botic/botic_2.png" alt="">
+            <section class="card cardOdd"  data-aos="fade-left">
+                <img class = "profilePic" src="images/team/charles.jpg" alt="">
                 <div>
                     <h3>
-                        Project Image Two
+                        <b>Charles de Villiers</b>
                     </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia eveniet veritatis perferendis dolor doloribus possimus ratione quam ipsa ut non laudantium in, unde earum id fugiat nihil vel delectus!</p>
-                    <a href="#" class="btn">More Info</a>
+                    <p>I am a final year BSc Computer Science student at the University of Pretoria. I am hard working and dedicated to any project that I am assigned to, I’m always looking to learn from those around me and always try to keep an open mind in all situations.</p>
+					<div class="links">
+						<a target="_blank" href="https://github.com/JustinG123"><img src="images/links/github.png" alt="" class="linkImg"></a>
+						<a target="_blank" href="https://www.linkedin.com/in/justin-grenfell-7b6b6915b/"> <img src="images/links/linkedIn.png" alt="" class="linkImg linkedIn"></a>
+					</div>
                 </div>
             </section>
             
             <section class="card" data-aos="fade-right">
-                <img src="images/botic/botic_3.png" alt="">
+                <img class = "profilePic" src="images/team/lesego.jpg" alt="">
                 <div>
                     <h3>
-                        Project Image Three
+                        <b>Lesego Mabe</b>
                     </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia eveniet veritatis perferendis dolor doloribus possimus ratione quam ipsa ut non laudantium in, unde earum id fugiat nihil vel delectus!</p>
-                    <a href="#" class="btn">More Info</a>
+                    <p>I am a final year Computer Science student at the University of Pretoria. I have a keen interest in Software Engineering, Computer Security and Networking, but above all, Software Architecture. I enjoy the freedom for creativity that software provides and am always willing to learn.</p>
+					<div class="links">
+						<a target="_blank" href="https://github.com/LesegoGomolemo"><img src="images/links/github.png" alt="" class="linkImg"></a>
+						<a target="_blank" href="https://www.linkedin.com/in/lesegogomolemo/"> <img src="images/links/linkedIn.png" alt="" class="linkImg linkedIn"></a>
+					</div>
                 </div>
             </section>
                     
-            <section class="card" data-aos="fade-left">
-                <img src="images/botic/botic_4.png" alt="">
+            <section class="card card cardOdd" data-aos="fade-left">
+                <img class = "profilePic" src="images/team/brett.jpg" alt="">
                 <div>
                     <h3>
-                        Project Image Four
+                        <b>Brett Fourie</b>
                     </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia eveniet veritatis perferendis dolor doloribus possimus ratione quam ipsa ut non laudantium in, unde earum id fugiat nihil vel delectus!</p>
-                    <a href="#" class="btn">More Info</a>
+                    <p>I am a second year Computer Science student at the University of Pretoria. My interests include web development, data sciences, gaming and sports. I enjoy programming as the ability to create something out of nothing that can benefit other people is satisfying.</p>
+					<div class="links">
+						<a target="_blank" href="https://github.com/BrettFourie"><img src="images/links/github.png" alt="" class="linkImg"></a>
+						<a target="_blank" href="https://www.linkedin.com/in/brett-fourie-949021192/"> <img src="images/links/linkedIn.png" alt="" class="linkImg linkedIn"></a>
+					</div>					
                 </div>
             </section>
-
-            <section class="card" data-aos="fade-right">
-                <img src="images/botic/botic_5.png" alt="">
-                <div>
-                    <h3>
-                        Project Image Five
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia eveniet veritatis perferendis dolor doloribus possimus ratione quam ipsa ut non laudantium in, unde earum id fugiat nihil vel delectus!</p>
-                    <a href="#" class="btn">More Info</a>
-                </div>
-            </section>
-
         </main>
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem; /*1 rem is 16 pixels or the size of 'html'*/
   background: rgb(2,0,36);
   background: linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(1,22,39,1) 13%, rgba(1,88,115,1) 49%, rgba(0,212,255,1) 100%);
@@ -21,6 +22,7 @@ a {
   margin: auto;
   overflow: auto;
   padding: 0 2rem;
+  padding-top: 5vh;
 }
 
 .main-header {
@@ -35,11 +37,11 @@ a {
 }
 
 .main-header h1 {
-  font-size: 4rem;
+  font-size: 4vw;
   margin-bottom: 2rem;
   line-height: 1.2;
   color: #fff;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .main-header h1 span {
@@ -47,18 +49,48 @@ a {
 }
 
 .main-header p {
-  font-size: 2rem;
+  font-size: 2vw;
   color: #fff;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
-img {
+.profilePic {
   width: 100%;
 }
 
-.card {
+.projectPic{
+  width: 100%;
+  height: 100%;
+}
+
+.oneColCard{
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr; /*two even columns; alt: repeat(2, 1fr)*/
+  grid-template-columns: 100%; /*two even columns; alt: repeat(2, 1fr)*/
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.oneColCard > div { /*adding style to the direct div and not the other ones inside*/
+  padding: 2rem;
+}
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 40% 60%; /*two even columns; alt: repeat(2, 1fr)*/
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.cardOdd
+{
+  display: grid;
+  grid-template-columns: 60% 40%; /*two even columns; alt: repeat(2, 1fr)*/
   grid-gap: 2rem;
   background: #f1f1f1;
   margin-bottom: 2rem;
@@ -68,18 +100,36 @@ img {
   margin-bottom: 2rem;
 }
 
-.card img {
-  height: 400px;
+.card .profilePic {
+  height: auto;
 }
 
 .card > div { /*adding style to the direct div and not the other ones inside*/
   padding: 2rem;
 }
 
-.card:nth-child(even) img {
+.card:nth-child(odd) .profilePic {
   order: 2;
 }
 
+.links{
+  position: absolute;
+}
+.linkImg{
+  display: inline-block;
+  margin: 5% 5% 5% 0;
+  width: 25%;
+}
+
+.linkImg:hover{
+  width: 26%;
+  transition: width 0.5s;
+}
+
+.linkedIn{
+  position: absolute;
+  right: 40%;
+}
 .btn {
   display: inline-block;
   background: #000;
@@ -97,4 +147,110 @@ img {
   .card {
       display: block; /*so that the images stack on top of each other as soon as we reach 700px*/
   }
+}
+
+/* .navbar.transparent.fixed-top {
+  background: rgba(0,0,0,0);
+} */
+
+.fullscreen {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-arrow {
+  position: absolute; /* I know terrible way of doing it*/
+  top: 25vh;
+  bottom: 50vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.scroll {
+  color: #000;
+  position: absolute; /* I know terrible way of doing it*/
+  text-align: center;
+  width: 100%;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.meet-team {
+  text-align: center;
+  display: contents;
+  opacity: 0.8;
+}
+
+.next-page {
+  opacity: 0.8;
+}
+
+.black {
+  color: #000
+}
+
+.black-text {
+	color: #000;
+	filter: opacity(75%);
+}
+
+.right-arrow {
+  position: absolute; /*I know terrible way of doing it*/
+  display: contents;
+  right: 5vw;
+}
+
+.left-arrow {
+  position: absolute; /*I know terrible way of doing it*/
+  display: contents;
+  left: 5vw;
+}
+
+.color-fade .color-fade-icon {
+  color: #000000;
+  transition: 0.3s;
+}
+
+.color-fade-white .color-fade-icon-white {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.color-fade-white:hover .color-fade-icon-white {
+  color: #40E0D0;
+}
+
+.color-fade:hover .color-fade-icon {
+  color: #40E0D0;
+}
+
+.circle {
+	background-color: #000000;
+	width:48%;
+	height: 100%;
+	border-radius: 100%;
+	position: relative;
+	left: 20%;
+}
+
+.opa {
+	opacity: 100%
+}
+
+.video{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.game{
+  text-align: center;
 }

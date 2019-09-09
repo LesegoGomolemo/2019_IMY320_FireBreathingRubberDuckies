@@ -1,0 +1,35 @@
+<!--This is the page containing the game-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include ./layout/headerimports.ejs %>
+    </head>
+
+    <body>
+        <%- include ./layout/header.ejs %>
+
+        <main id="theGame" class="container">
+            <section class="oneColCard"  data-aos="fade-down">
+                <div class = "game">
+                    <script src="https://cdn.htmlgames.com/embed.js?game=NeonBubble&amp;&amp;bgcolor=white"></script>
+                    <br>
+                    <p>This is a game that was found on HTML Games</p>
+                    <a target="_blank" href="https://www.htmlgames.com/game/Neon+Bubble" class="btn">More Info</a>
+                </div>
+            </section>
+
+
+        </main>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400,
+                duration: 1000
+            });
+        </script> 
+        
+        <%- include ./layout/footer.ejs %>
+    </body>
+</html>
