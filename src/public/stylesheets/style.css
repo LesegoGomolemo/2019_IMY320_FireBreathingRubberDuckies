@@ -76,6 +76,23 @@ a {
 .oneColCard > div { /*adding style to the direct div and not the other ones inside*/
   padding: 2rem;
 }
+
+.AUcard{
+  padding: 2%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%; /*two even columns; alt: repeat(2, 1fr)*/
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.AUcard:nth-child(odd) .profilePic {
+  order: 2;
+}
+
 .card {
   position: relative;
   display: grid;
