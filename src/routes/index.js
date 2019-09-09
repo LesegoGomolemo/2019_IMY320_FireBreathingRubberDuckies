@@ -41,7 +41,7 @@ router.get('/horrorShort', function(req, res, next) {
                               showHome: '',
                               firstWordTitle: 'No',
                               restOfTitle: ' Strings Attached',
-                              pageDescription: 'Just when you thought puppets wernt living',
+                              pageDescription: 'Just when you thought puppets werent living',
                               leftPage: 'Our Projects',
                               leftAddress: '/projects',
                               thisHeading: 'About the movie',
