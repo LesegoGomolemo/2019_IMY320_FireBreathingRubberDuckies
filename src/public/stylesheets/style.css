@@ -154,8 +154,9 @@ img {
   color: #000
 }
 
-.white {
-  color: #fff;
+.black-text {
+	color: #000;
+	filter: opacity(75%);
 }
 
 .right-arrow {
@@ -177,4 +178,17 @@ img {
 
 .color-fade:hover .color-fade-icon {
   color: #40E0D0;
+}
+
+.circle {
+	background-color: #000000;
+	width:55%;
+	height: 100%;
+	border-radius: 100%;
+	position: relative;
+	left: 20%;
+}
+
+.opa {
+	opacity: 100%
 }
