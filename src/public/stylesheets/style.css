@@ -219,6 +219,15 @@ a {
   transition: 0.3s;
 }
 
+.color-fade-white .color-fade-icon-white {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.color-fade-white:hover .color-fade-icon-white {
+  color: #40E0D0;
+}
+
 .color-fade:hover .color-fade-icon {
   color: #40E0D0;
 }
