@@ -254,3 +254,9 @@ a {
 .game{
   text-align: center;
 }
+
+.badBtn {
+	width: 15%;
+	bottom: 20%;
+	left: 50%;
+}
