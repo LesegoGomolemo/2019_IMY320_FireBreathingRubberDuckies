@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
                         pageDescription: '"We could all be reading a book right now, but lets watch these rubber duckies spit fire."',
                         leftPage: 'Our Game',
                         leftAddress: '/game',
-                        thisHeading: 'Meet The Team',
+                        thisHeading: 'About Us',
                         downAddress: '#team',
                         rightPage: 'Our Projects',
                         rightAddress: '/projects'});
@@ -27,7 +27,7 @@ router.get('/game', function(req, res, next) {
                         leftAddress: '/horrorShort',
                         thisHeading: 'About the game',
                         downAddress: '#theGame',
-                        rightPage: 'Meet the team',
+                        rightPage: 'About Us',
                         rightAddress: '/'});
 });
 /* GET project X. */
@@ -58,7 +58,7 @@ router.get('/projects', function(req, res, next) {
                         firstWordTitle: 'Our',
                         restOfTitle: ' Projects',
                         pageDescription: 'Our web development projects',
-                        leftPage: 'Meet The Team',
+                        leftPage: 'About Us',
                         leftAddress: '/',
                         thisHeading: 'Our Projects',
                         downAddress: '#scroll-to',
