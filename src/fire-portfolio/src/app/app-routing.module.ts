@@ -4,6 +4,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 
 const routes: Routes = [
+  { path: '/', component: HomeComponent, pathMatch: 'full', data: { animation: 'HomePage'} },
   { path: 'home', component: HomeComponent, pathMatch: 'full', data: { animation: 'HomePage'} },
   { path: 'project', component: ProjectsComponent, data: { animation: 'ProjectsPage'} }
 ];
