@@ -26,8 +26,8 @@ export class LandingComponent implements OnInit {
         this.leftLink = '/game';
         this.leftPage = 'Our Game';
 
-        this.rightLink = '/projects';
-        this.rightPage = 'Our Projects';
+        this.rightLink = '/botic';
+        this.rightPage = 'Botic';
 
         this.downLink = '#';
         this.thisHeading = 'Welcome';
@@ -38,12 +38,44 @@ export class LandingComponent implements OnInit {
         break;
       }
 
+      case '/home': {
+        this.leftLink = '/game';
+        this.leftPage = 'Our Game';
+
+        this.rightLink = '/botic';
+        this.rightPage = 'Botic';
+
+        this.downLink = '#';
+        this.thisHeading = 'Welcome';
+
+        this.pageTitle = ' Breathing Rubber Duckies';
+        this.pagePrefix = 'Fire';
+        this.pageDescription = 'We could all be reading a book right now, but let\'s watch rubber duckies spit fire.';
+        break;
+      }
+
+      case '/game': {
+        this.leftLink = '/horror';
+        this.leftPage = 'Horror Short';
+
+        this.rightLink = '/home';
+        this.rightPage = 'Welcome';
+
+        this.downLink = '/game#theGame';
+        this.thisHeading = 'Our Game';
+
+        this.pageTitle = ' Game';
+        this.pagePrefix = 'Our';
+        this.pageDescription = ' This is for our nonexistent video game.';
+        break;
+      }
+
       default: {
         this.leftLink = '/game';
         this.leftPage = 'Our Game';
 
-        this.rightLink = '/projects';
-        this.rightPage = 'Our Projects';
+        this.rightLink = '/botic';
+        this.rightPage = 'Botic';
 
         this.downLink = '/#team';
         this.thisHeading = 'Welcome';

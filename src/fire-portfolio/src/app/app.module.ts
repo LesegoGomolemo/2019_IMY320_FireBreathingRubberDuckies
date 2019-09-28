@@ -11,6 +11,7 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { AnimatedCardComponent } from './components/layout/animated-card/animated-card.component';
 import { LandingComponent } from './components/layout/landing/landing.component';
 import { GameComponent } from './components/pages/game/game.component';
+import { BoticComponent } from './components/pages/botic/botic.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GameComponent } from './components/pages/game/game.component';
     FooterComponent,
     AnimatedCardComponent,
     LandingComponent,
-    GameComponent
+    GameComponent,
+    BoticComponent
   ],
   imports: [
     BrowserModule,
