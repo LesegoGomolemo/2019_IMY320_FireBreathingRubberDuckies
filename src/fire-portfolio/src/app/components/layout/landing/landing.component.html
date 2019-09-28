@@ -1,0 +1,35 @@
+<div style="width: 95vw; height: 100vh;">
+
+  <div class="page_title">
+    <div class="center-arrow">
+      <header class="main-header">
+        <h1><span>{{pagePrefix}}</span>{{pageTitle}}</h1>
+        <p>{{pageDescription}}</p>
+      </header>
+    </div>
+  </div>
+  
+  <div class="scroll">
+    <a routerLink="{{leftLink}}">
+      <div class="left-arrow color-fade" style="display: inline-block; width: 9vw">
+          <p class="next-page" style="font-size:2vh; color: #ffffff;">{{leftPage}}</p>
+          <i class="fa fa-angle-double-left color-fade-icon" style="font-size:6vh;"></i>
+      </div>
+    </a>
+
+    <a href="{{ downLink }}">
+        <div class="color-fade" style="display: inline-block">
+            <p class="meet-team" style="font-size:2vh; color: #ffffff;">{{thisHeading}}</p>
+            <br>
+            <i class="fa fa-angle-double-down color-fade-icon" style="font-size:6vh; padding-top: 2vh;"></i>
+        </div>
+    </a>
+
+    <a routerLink="{{ rightAddress}}">
+        <div class="right-arrow color-fade" style="display: inline-block; width: 9vw">
+            <p class="next-page" style="font-size:2vh; color: #ffffff;">{{rightPage}}</p>
+            <i class="fa fa-angle-double-right color-fade-icon" style="font-size:6vh;"></i>
+        </div>
+    </a>
+  </div>
+</div>

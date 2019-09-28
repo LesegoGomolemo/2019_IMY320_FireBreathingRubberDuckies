@@ -26,35 +26,6 @@
     padding-top: 5vh;
   }
   
-  .main-header {
-    height: 55hv; /*viewport height -- 55 of them*/
-    /*we want to center everything vertically and horizantally*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .main-header h1 {
-    font-size: 4vw;
-    margin-bottom: 2rem;
-    line-height: 1.2;
-    color: #fff;
-    opacity: 0.8;
-  }
-  
-  .main-header h1 span {
-    color: #b50d10;
-  }
-  
-  .main-header p {
-    font-size: 2vw;
-    color: #fff;
-    opacity: 0.8;
-  }
-  
   .profilePic {
     width: 100%;
   }
@@ -86,6 +57,7 @@
     margin-bottom: 2rem;
     overflow: hidden;
     border-radius: 10px;
+    height: 50vh;
   }
   
   .cardOdd
@@ -164,35 +136,6 @@
     text-align: center;
   }
   
-  .center-arrow {
-    position: absolute; /* I know terrible way of doing it*/
-    top: 25vh;
-    bottom: 50vh;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  
-  .scroll {
-    color: #000;
-    position: absolute; /* I know terrible way of doing it*/
-    text-align: center;
-    width: 100%;
-    bottom: 5vh;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  
-  .meet-team {
-    text-align: center;
-    display: contents;
-    opacity: 0.8;
-  }
-  
-  .next-page {
-    opacity: 0.8;
-  }
   
   .black {
     color: #000
@@ -201,23 +144,6 @@
   .black-text {
       color: #000;
       filter: opacity(75%);
-  }
-  
-  .right-arrow {
-    position: absolute; /*I know terrible way of doing it*/
-    display: contents;
-    right: 5vw;
-  }
-  
-  .left-arrow {
-    position: absolute; /*I know terrible way of doing it*/
-    display: contents;
-    left: 5vw;
-  }
-  
-  .color-fade .color-fade-icon {
-    color: #000000;
-    transition: 0.3s;
   }
   
   .color-fade-white .color-fade-icon-white {
@@ -229,9 +155,6 @@
     color: #40E0D0;
   }
   
-  .color-fade:hover .color-fade-icon {
-    color: #40E0D0;
-  }
   
   .circle {
       background-color: #000000;
