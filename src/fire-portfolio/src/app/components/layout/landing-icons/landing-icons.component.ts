@@ -16,7 +16,6 @@ export class LandingIconsComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    
     this.getIcons();
 
   }

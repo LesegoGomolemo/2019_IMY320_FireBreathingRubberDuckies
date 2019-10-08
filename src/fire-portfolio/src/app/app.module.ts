@@ -17,6 +17,8 @@ import { ErpComponent } from './components/pages/erp/erp.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { LandingIconsComponent } from './components/layout/landing-icons/landing-icons.component';
 
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +38,8 @@ import { LandingIconsComponent } from './components/layout/landing-icons/landing
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -29,7 +29,7 @@ export class LandingComponent implements OnInit {
         this.rightLink = '/botic';
         this.rightPage = 'Botic';
 
-        this.downLink = '#';
+        this.downLink = '#software';
         this.thisHeading = 'Welcome';
 
         this.pageTitle = ' are a Multimedia and Software Group';
@@ -45,7 +45,7 @@ export class LandingComponent implements OnInit {
         this.rightLink = '/botic';
         this.rightPage = 'Botic';
 
-        this.downLink = '#';
+        this.downLink = '#software';
         this.thisHeading = 'Welcome';
 
         this.pageTitle = ' are a Multimedia and Software Group';
@@ -77,7 +77,7 @@ export class LandingComponent implements OnInit {
         this.rightLink = '/botic';
         this.rightPage = 'Botic';
 
-        this.downLink = '/#team';
+        this.downLink = '/#software';
         this.thisHeading = 'Welcome';
 
         this.pageTitle = ' are a Multimedia and Software Group';
