@@ -15,6 +15,7 @@ import { BoticComponent } from './components/pages/botic/botic.component';
 import { MovieComponent } from './components/pages/movie/movie.component';
 import { ErpComponent } from './components/pages/erp/erp.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { LandingIconsComponent } from './components/layout/landing-icons/landing-icons.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AboutComponent } from './components/pages/about/about.component';
     BoticComponent,
     MovieComponent,
     ErpComponent,
-    AboutComponent
+    AboutComponent,
+    LandingIconsComponent
   ],
   imports: [
     BrowserModule,
