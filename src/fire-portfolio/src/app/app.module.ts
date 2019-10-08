@@ -12,6 +12,9 @@ import { AnimatedCardComponent } from './components/layout/animated-card/animate
 import { LandingComponent } from './components/layout/landing/landing.component';
 import { GameComponent } from './components/pages/game/game.component';
 import { BoticComponent } from './components/pages/botic/botic.component';
+import { MovieComponent } from './components/pages/movie/movie.component';
+import { ErpComponent } from './components/pages/erp/erp.component';
+import { AboutComponent } from './components/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { BoticComponent } from './components/pages/botic/botic.component';
     AnimatedCardComponent,
     LandingComponent,
     GameComponent,
-    BoticComponent
+    BoticComponent,
+    MovieComponent,
+    ErpComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

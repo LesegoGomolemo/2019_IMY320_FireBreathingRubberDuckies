@@ -32,8 +32,8 @@ export class LandingComponent implements OnInit {
         this.downLink = '#';
         this.thisHeading = 'Welcome';
 
-        this.pageTitle = ' Breathing Rubber Duckies';
-        this.pagePrefix = 'Fire';
+        this.pageTitle = ' are a Multimedia and Software Group';
+        this.pagePrefix = 'We';
         this.pageDescription = 'We could all be reading a book right now, but let\'s watch rubber duckies spit fire.';
         break;
       }
@@ -48,8 +48,8 @@ export class LandingComponent implements OnInit {
         this.downLink = '#';
         this.thisHeading = 'Welcome';
 
-        this.pageTitle = ' Breathing Rubber Duckies';
-        this.pagePrefix = 'Fire';
+        this.pageTitle = ' are a Multimedia and Software Group';
+        this.pagePrefix = 'We';
         this.pageDescription = 'We could all be reading a book right now, but let\'s watch rubber duckies spit fire.';
         break;
       }
@@ -80,8 +80,8 @@ export class LandingComponent implements OnInit {
         this.downLink = '/#team';
         this.thisHeading = 'Welcome';
 
-        this.pageTitle = ' Breathing Rubber Duckies';
-        this.pagePrefix = 'Fire';
+        this.pageTitle = ' are a Multimedia and Software Group';
+        this.pagePrefix = 'We';
         this.pageDescription = 'We could all be reading a book right now, but let\'s watch rubber duckies spit fire.';
       }
     }
