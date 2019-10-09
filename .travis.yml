@@ -1,0 +1,24 @@
+--- 
+branches:
+  only:
+  - master
+  - dev
+
+language: node_js
+node_js:
+- "12.2.0"
+
+before_script:
+- node --version
+- npm --version
+
+script:
+- npm run build
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: aDaCYCQBuOAYcf2p/QLtwiaxsqmrXSHHsguS+NFTENkvxnl3bJ1KG4jVphXyohigI563WDrYehklebdhXreTULwJ8rDJp96CcPsQh5KbnawZuW6wDFvMWKaNfX196nqWtiWPU7GhI2ct16ctfYibECXcdbvMmtx1zHeEjOA79FxIjXICjd8RRy4XiKRzH2gb8xlHH4YUlGLnIf3Z8ytH/ftj1u/a6NQLQm5O5FxrnDuKV7lVo2bVJH0ovGQ/5eg46ra/BiPTrq27t5JJnDGD1m29/4oTvRhuTrhJC5w5K5nN8l9NooZrhZmH0zC6jPpO0o7ek6glVIuxbrNZAxM7tmkS5Gj8iAycOxbt9XRTYHFAzFflBM2ZQ1N2s85VtTUb+RqK/YpwHqTwPhv1UQT93YRt7Rn9la5g3pZvsjxlyELfut2ekAwjuoG3Kgpi+rdXgNel9GaN8qfk5EcGizWsNatnGyDlGtVMA+Jrf6CLChC9NZM0B1lCHVn5QKReIohk2ovz5Q49miO7N4MLQTJJuWsk4VCUDvMSmd1tcvL2qpfss4hMSxUf3QNRTTYCEl4huD1nPB+oqUckPe7R/bSxhw4IpnC5sLLsXVGopvbIccytH/vwso1eqjS6nCKjEH1foG+1rN3o4emVRk0/cs/wdro9L1IZ5HMjlzki6od8HMc=
+  app: fire-breathing-app
+  on:
+    repo: LesegoGomolemo/2019_IMY320_FireBreathingRubberDuckies
