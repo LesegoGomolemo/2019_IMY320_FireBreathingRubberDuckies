@@ -13,6 +13,7 @@ before_script:
 - npm --version
 
 script:
+- cd $TRAVIS_BUILD_DIR/src/fire-portfolio
 - npm run build
 
 deploy:
