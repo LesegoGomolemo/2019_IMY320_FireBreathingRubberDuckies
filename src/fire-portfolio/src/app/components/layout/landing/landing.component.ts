@@ -70,6 +70,22 @@ export class LandingComponent implements OnInit {
         break;
       }
 
+      case '/erp': {
+        this.leftLink = '/botic';
+        this.leftPage = 'botic';
+
+        this.rightLink = '/about';
+        this.rightPage = 'About Us';
+
+        this.downLink = '/erp#ERP';
+        this.thisHeading = 'ERP Ranger App';
+
+        this.pageTitle = ' Ranger Application';
+        this.pagePrefix = 'ERP';
+        this.pageDescription = ' This is the ERP Ranger Application project.';
+        break;
+      }
+
       default: {
         this.leftLink = '/game';
         this.leftPage = 'Our Game';
