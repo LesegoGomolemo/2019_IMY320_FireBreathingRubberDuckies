@@ -10,15 +10,15 @@ export class LandingComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  private leftLink: string;
-  private leftPage: string;
-  private downLink: string;
-  private thisHeading: string;
-  private rightLink: string;
-  private rightPage: string;
-  private pageTitle: string;
-  private pagePrefix: string;
-  private pageDescription: string;
+  public leftLink: string;
+  public leftPage: string;
+  public downLink: string;
+  public thisHeading: string;
+  public rightLink: string;
+  public rightPage: string;
+  public pageTitle: string;
+  public pagePrefix: string;
+  public pageDescription: string;
 
   ngOnInit() {
     switch ( this.router.url ) {

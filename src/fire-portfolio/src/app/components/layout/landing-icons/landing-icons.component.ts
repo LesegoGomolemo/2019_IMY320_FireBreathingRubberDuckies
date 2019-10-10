@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 })
 export class LandingIconsComponent implements OnInit {
 
-  private film: string;
-  private gaming: string;
-  private desktop: string;
+ public film: string;
+ public gaming: string;
+ public desktop: string;
 
   constructor(private router: Router) { }
 
