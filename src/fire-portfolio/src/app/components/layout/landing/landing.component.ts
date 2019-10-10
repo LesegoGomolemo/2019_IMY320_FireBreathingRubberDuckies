@@ -70,6 +70,22 @@ export class LandingComponent implements OnInit {
         break;
       }
 
+      case '/about': {
+        this.leftLink = '/erp';
+        this.leftPage = 'ERP Ranger';
+
+        this.rightLink = '/projects';
+        this.rightPage = 'Project X';
+
+        this.downLink = '/about#team';
+        this.thisHeading = 'About Us';
+
+        this.pageTitle = ' Us';
+        this.pagePrefix = 'About';
+        this.pageDescription = 'Let\'s introduce ourselves, shall we?';
+        break;
+      }
+
       default: {
         this.leftLink = '/game';
         this.leftPage = 'Our Game';
