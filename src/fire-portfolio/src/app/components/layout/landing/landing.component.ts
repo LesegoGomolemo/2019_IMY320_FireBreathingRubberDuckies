@@ -69,7 +69,7 @@ export class LandingComponent implements OnInit {
         this.pageDescription = ' This is for our nonexistent video game.';
         break;
       }
-
+        
       case '/erp': {
         this.leftLink = '/botic';
         this.leftPage = 'Botic';
@@ -82,7 +82,23 @@ export class LandingComponent implements OnInit {
 
         this.pageTitle = ' Ranger Application';
         this.pagePrefix = 'ERP';
-        this.pageDescription = ' This is the ERP Ranger Application project.';
+        this.pageDescription = 'This is the ERP Ranger Application project.';
+        break;
+      }
+        
+      case '/about': {
+        this.leftLink = '/erp';
+        this.leftPage = 'ERP Ranger';
+
+        this.rightLink = '/projects';
+        this.rightPage = 'Project X';
+
+        this.downLink = '/about#team';
+        this.thisHeading = 'About Us';
+
+        this.pageTitle = ' Us';
+        this.pagePrefix = 'About';
+        this.pageDescription = 'Let\'s introduce ourselves, shall we?';
         break;
       }
 
