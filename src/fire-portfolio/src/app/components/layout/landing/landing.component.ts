@@ -72,7 +72,7 @@ export class LandingComponent implements OnInit {
 
       case '/erp': {
         this.leftLink = '/botic';
-        this.leftPage = 'botic';
+        this.leftPage = 'Botic';
 
         this.rightLink = '/about';
         this.rightPage = 'About Us';
