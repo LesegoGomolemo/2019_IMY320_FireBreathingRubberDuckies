@@ -77,7 +77,7 @@ export class LandingComponent implements OnInit {
         this.rightLink = '/about';
         this.rightPage = 'About Us';
 
-        this.downLink = '/erp#ERP';
+        this.downLink = '/erp#Goal';
         this.thisHeading = 'ERP Ranger App';
 
         this.pageTitle = ' Ranger Application';
