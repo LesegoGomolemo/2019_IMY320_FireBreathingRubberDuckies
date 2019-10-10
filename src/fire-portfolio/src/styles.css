@@ -50,21 +50,7 @@
   .links{
     position: absolute;
   }
-  .linkImg{
-    display: inline-block;
-    margin: 5% 5% 5% 0;
-    width: 25%;
-  }
   
-  .linkImg:hover{
-    width: 26%;
-    transition: width 0.5s;
-  }
-  
-  .linkedIn{
-    position: absolute;
-    right: 40%;
-  }
   .btn {
     display: inline-block;
     background: #000;

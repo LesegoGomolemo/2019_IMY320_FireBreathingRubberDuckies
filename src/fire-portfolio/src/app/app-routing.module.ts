@@ -14,9 +14,9 @@ const routes: Routes = [
   { path: 'project', component: ProjectsComponent, data: { animation: 'ProjectsPage'} },
   { path: 'game', component: GameComponent, data: {animation: 'FilterPage'} },
   { path: 'botic', component: BoticComponent, data: {animation: 'FilterPage'} },
-  { path: 'about', component: AboutComponent},
-  { path: 'erp', component: ErpComponent },
-  { path: 'movie', component: MovieComponent }
+  { path: 'about', component: AboutComponent, data: {animation: 'FilterPage'} },
+  { path: 'erp', component: ErpComponent, data: {animation: 'FilterPage'} },
+  { path: 'movie', component: MovieComponent, data: {animation: 'FilterPage'} }
 ];
 
 @NgModule({
