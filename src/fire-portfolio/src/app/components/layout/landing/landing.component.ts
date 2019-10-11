@@ -106,8 +106,8 @@ export class LandingComponent implements OnInit {
         this.leftLink = '/erp';
         this.leftPage = 'ERP Ranger';
 
-        this.rightLink = '/projects';
-        this.rightPage = 'Project X';
+        this.rightLink = '/movie';
+        this.rightPage = 'Horror Short';
 
         this.downLink = '/about#team';
         this.thisHeading = 'About Us';
@@ -119,8 +119,8 @@ export class LandingComponent implements OnInit {
       }
 
       case '/movie': {
-        this.leftLink = '/projects';
-        this.leftPage = 'Project X';
+        this.leftLink = '/about';
+        this.leftPage = 'About Us';
 
         this.rightLink = '/game';
         this.rightPage = 'Game';
