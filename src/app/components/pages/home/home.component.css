@@ -16,13 +16,23 @@
 }
 
 .darker {
-    background: #3B1F2B; 
-    background: -webkit-linear-gradient(to right, #3B1F2B, rgb(114, 34, 69)); 
-    background: linear-gradient(to right, #3B1F2B, rgb(114, 34, 69));
+    background: #000075; 
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6); 
+    background: linear-gradient(to right, #021B79, #0575E6);
+}
+.lighter {
+    background: #5ECEFF;
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6); 
+    background: linear-gradient(to right, #021B79, #0575E6);
 }
 
-.lighter {
-    background: purple;
+p{
+    color: aliceblue;
+    font-size: 16px;
+}
+
+h3{
+    color: aliceblue;
 }
 
 .animated {
