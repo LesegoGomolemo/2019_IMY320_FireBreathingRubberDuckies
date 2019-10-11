@@ -1,3 +1,191 @@
 <div>
+  <title>Fire Portfolio | Home</title>
+
+  <app-landing></app-landing>
+
+  <div id="intro">
+    <section id="problem" class="contentContainer darker">
+      <div class="content hide-on-init" style="background-color: rgba(0,0,0,0.2); color: black;" animateOnScroll animationName="animated slideInRight">
+        <div style="height: 100%; width: 50%; position: absolute;">
+          <div style="position: absolute; top: 0%;">
+            <img style="margin-top: -3px;" src="https://img.icons8.com/wired/64/000000/web.png" alt="desktop">
+          </div>
+
+          <div style="margin-left: 3vw;">
+            <div>
+              <h3 class="text-center" style="margin-top: 8vh;">
+                <b>The Problem</b> 
+              </h3>
+            </div>
+            
+            <div style="margin-top: 2vh; margin-left: 2vw;">
+              <p>
+                A crucial part of any business in today's economic climate is customer service. Those companies that are
+                willing to go the extra mile for their customers are seen as being a cut above the rest. With superior
+                customer service, a company can not only bring in new clients who want an experience that seems to cater
+                to them as an individual, but also successfully retain existing clients by dealing with their issues eciently
+                and eectively.
+                In order to do so, there needs to be a system that can record customer feedback and act on it in as
+                soon as possible. In the past, this has been achieved by employing a large number of people around the
+                clock that sat and waited for queries, handled them and sent back the results.
+                While this works, it is not only inecient (dierent employees may respond better or worse than others,
+                employees may not follow protocols, mistakes may be made regularly) but nancially costly as well. On
+                top of that, when dealing accounts and queries, customers may inadvertently divulge private information
+                that is not applicable to their case, but may leave them vulnerable should that information become public
+                knowledge.
+                What if one central system could seamlessly record, interpret and act on the requests of multiple users
+                24/7 and prevent them from transmitting sensitive data unless absolutely necessary?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="height: 100%; width: 50%; left: 50%; position: absolute;">
+          <div style="margin-top: 10vh; margin-left: 15vw;">
+            <img src="../../../../assets/images/botic/logo.gif" alt="Botic Logo" style="height: auto; width: 65%;">
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <section id="solution" class="contentContainer lighter">
+      <div class="content hide-on-init" style="background-color: rgba(0,0,0,0.2); color: black;" animateOnScroll animationName="animated slideInRight">
+        <div style="height: 100%; width: 50%; position: absolute;">
+          <!--
+          <div style="position: absolute; top: 0%;">
+            <img style="margin-top: -3px;" src="https://img.icons8.com/wired/64/000000/web.png" alt="desktop">
+          </div>
+          -->
+
+          <div style="margin-top: 2vh; margin-left: 1vw;">
+            <img src="../../../../assets/images/botic/query.JPG" alt="Query Example" style="height: auto; width: 115%;">
+          </div>
+
+        </div>
+        <div style="height: 100%; width: 50%; left: 58%; position: absolute;">
+          <div style="margin-right: 8vw;">
+            <div>
+              <h3 class="text-center" style="margin-top: 10vh;">
+                <b>The Project</b> 
+              </h3>
+            </div>
+            
+            <div style="margin-top: 5vh; margin-left: 2vw;">
+              <p>
+                Botic is the solution! One system that can not only record user queries, but sanitize their content by
+                ltering out any "data risks" and act on the provided information, returning the appropriate response.
+                Trained on historical data, the system uses articial intelligence to analyze requests and act accordingly.
+                It scrapes all data before transmission to ensure that no sensitive information is sent to or from the client
+                without clearance from the sender.
+                Should the system be unable to nd a suitable response, the request will be handed o to a customer
+                support representative who will then deal with the request. Once that case has been handled, the system
+                will have learned how to deal with future requests of that type and will be able to return a response based
+                on this learning. This will ensure a high level of ecacy for the system as a whole.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="contentContainer darker">
+      <div class="content hide-on-init" style="background-color: rgba(0,0,0,0.2); color: black;" animateOnScroll animationName="animated slideInRight">
+        <div style="height: 100%; width: 50%; position: absolute;">
+          <div style="position: absolute; top: 0%;">
+            <img style="margin-top: -3px;" src="https://img.icons8.com/wired/64/000000/web.png" alt="user">
+          </div>
+
+          <div style="margin-left: 8vw;">
+            <div>
+              <h3 class="text-center" style="margin-top: 4vh;">
+                <b>More Details</b> 
+              </h3>
+            </div>
+            
+            <div style="margin-top: 4vh; margin-left: 2vw;">
+              <p>
+                The Botic system consists of the frontend, AI backend which includes the chatbot API, message scrubber
+                API, the classier API and their neural networks. The frontend is a Single Page Application which houses
+                the main user interface of the system. The Chatbot API is responsible for recieving messages and returning
+                responses.
+                The Message Scrubber API checks whether or not information provided to it is private and if so,
+                determines the severity of it. The neural networks are trained using Machine Learning and provide the
+                system with its intelligences-privacy classication, responses to queries and queries classication.
+              </p>
+              <p>
+                The frontend uses the MVC Architecture and is implemented using Angular 7. The chatbot and message scrubber
+                is implemented using Python, and Gensen. The persistence layer is implemented using Node and uses databases
+                in Postgres and MongoDB. This implementation, however, uses Typescript instead of vanilla JavaScript in a 
+                bit to increase the reliability of the subsystem itself.
+                All subsystems are containerized using Docker and deployed on Heroku apps.
+              </p>
+            </div>
+            
+            <div style="margin-left: 10vw; width: 20vw; margin-top: 10vh;">
+              <div style="float: left;">
+                
+              </div>
+              <div style="float: right;">
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div style="height: 100%; width: 50%; left: 50%; position: absolute;">
+          <div style="margin-top: 10vh; margin-left: 15vw;">
+            <img src="../../../../assets/images/team/brett.jpg" alt="Brett Fourie" style="height: auto; width: 55%;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="members" class="contentContainer lighter">
+      <div class="content hide-on-init" style="background-color: rgba(0,0,0,0.2); color: black;" animateOnScroll animationName="animated slideInRight">
+        <div style="height: 100%; width: 50%; position: absolute;">
+          <div style="position: absolute; top: 0%;">
+            <img style="margin-top: -3px;" src="https://img.icons8.com/dotty/80/000000/user.png" alt="user">
+          </div>
+
+          <div style="margin-top: 10vh; margin-left: 15vw;">
+            <img src="../../../../assets/images/team/lesego.jpg" alt="Justin Grenfell" style="height: auto; width: 55%;">
+          </div>
+
+        </div>
+        <div style="height: 100%; width: 50%; left: 50%; position: absolute;">
+          <div style="margin-right: 8vw;">
+            <div>
+              <h3 class="text-center" style="margin-top: 10vh;">
+                <b>Lesego Mabe</b> 
+              </h3>
+            </div>
+            
+            <div style="margin-top: 10vh; margin-left: 2vw;">
+              <p>
+                I am a final year Computer Science student at the University of Pretoria. 
+                I have a keen interest in Software Engineering, Computer Security and Networking, 
+                but above all, Software Architecture. I enjoy the freedom for creativity that 
+                software provides and am always willing to learn.
+              </p>
+            </div>
+            
+            <div style="margin-left: 10vw; width: 20vw; margin-top: 10vh;">
+              <div style="float: left;">
+                <a target="_blank" href="https://github.com/LesegoGomolemo">
+                  <img style="width: 10vw; height: 6vh;" src="../../../../assets/images/links/github.png" alt="" class="linkImg">
+                </a>
+              </div>
+              <div style="float: right;">
+                <a target="_blank" href="https://www.linkedin.com/in/lesegogomolemo/">
+                  <img style="width: 10vw; height: 6vh;" src="../../../../assets/images/links/linkedIn.png" alt="" class="linkImg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
   <app-footer></app-footer>
 </div>

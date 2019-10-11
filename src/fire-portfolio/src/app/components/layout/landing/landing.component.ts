@@ -86,6 +86,22 @@ export class LandingComponent implements OnInit {
         break;
       }
         
+      case '/botic': {
+        this.leftLink = '/home';
+        this.leftPage = 'Welcome';
+
+        this.rightLink = '/erp';
+        this.rightPage = 'ERP Rangers';
+
+        this.downLink = '/botic#intro';
+        this.thisHeading = 'Botic';
+
+        this.pageTitle = ' Privacy Aware Chatbot';
+        this.pagePrefix = 'Botic';
+        this.pageDescription = 'by Alabama Liquid Snakes';
+        break;
+      }
+
       case '/about': {
         this.leftLink = '/erp';
         this.leftPage = 'ERP Ranger';

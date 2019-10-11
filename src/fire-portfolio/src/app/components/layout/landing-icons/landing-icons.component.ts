@@ -43,6 +43,13 @@ export class LandingIconsComponent implements OnInit {
         break;
       }
 
+      case '/botic': {
+        this.left = '';
+        this.center = '<img src="https://img.icons8.com/wired/64/000000/web.png" alt="desktop">';
+        this.right = '';
+        break;
+      }
+      
       case '/about': {
         this.left = '';
         this.center = '<img src="https://img.icons8.com/dotty/80/000000/business-group.png" alt="about">';
