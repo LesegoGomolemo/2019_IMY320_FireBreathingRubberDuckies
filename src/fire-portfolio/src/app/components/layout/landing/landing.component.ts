@@ -61,7 +61,7 @@ export class LandingComponent implements OnInit {
         this.rightLink = '/home';
         this.rightPage = 'Welcome';
 
-        this.downLink = '/game#theGame';
+        this.downLink = '/game#game';
         this.thisHeading = 'Our Game';
 
         this.pageTitle = ' Game';
