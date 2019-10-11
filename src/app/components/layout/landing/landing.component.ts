@@ -86,12 +86,28 @@ export class LandingComponent implements OnInit {
         break;
       }
         
+      case '/botic': {
+        this.leftLink = '/home';
+        this.leftPage = 'Welcome';
+
+        this.rightLink = '/erp';
+        this.rightPage = 'ERP Rangers';
+
+        this.downLink = '/botic#intro';
+        this.thisHeading = 'Botic';
+
+        this.pageTitle = ' Privacy Aware Chatbot';
+        this.pagePrefix = 'Botic';
+        this.pageDescription = 'by Alabama Liquid Snakes';
+        break;
+      }
+
       case '/about': {
         this.leftLink = '/erp';
         this.leftPage = 'ERP Ranger';
 
-        this.rightLink = '/projects';
-        this.rightPage = 'Project X';
+        this.rightLink = '/movie';
+        this.rightPage = 'Horror Short';
 
         this.downLink = '/about#team';
         this.thisHeading = 'About Us';
@@ -103,8 +119,8 @@ export class LandingComponent implements OnInit {
       }
 
       case '/movie': {
-        this.leftLink = '/projects';
-        this.leftPage = 'Project X';
+        this.leftLink = '/about';
+        this.leftPage = 'About Us';
 
         this.rightLink = '/game';
         this.rightPage = 'Game';
