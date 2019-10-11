@@ -26,6 +26,10 @@
   opacity: 0.8;
 }
 
+p {
+  color: aliceblue;
+}
+
 .main-header h1 span {
   color: #b50d10;
 }
