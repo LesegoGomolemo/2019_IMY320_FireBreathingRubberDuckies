@@ -102,7 +102,7 @@ export class LandingComponent implements OnInit {
         break;
       }
 
-      case '/horror': {
+      case '/movie': {
         this.leftLink = '/projects';
         this.leftPage = 'Project X';
 
@@ -112,7 +112,7 @@ export class LandingComponent implements OnInit {
         this.downLink = '/horror#horror';
         this.thisHeading = 'Horror Short';
 
-        this.pageTitle = 'Strings Attached';
+        this.pageTitle = ' Strings Attached';
         this.pagePrefix = 'No';
         this.pageDescription = 'I\'ve got no strings to hold me down';
         break;
