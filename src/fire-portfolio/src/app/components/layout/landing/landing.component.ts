@@ -55,13 +55,13 @@ export class LandingComponent implements OnInit {
       }
 
       case '/game': {
-        this.leftLink = '/horror';
+        this.leftLink = '/movie';
         this.leftPage = 'Horror Short';
 
         this.rightLink = '/home';
         this.rightPage = 'Welcome';
 
-        this.downLink = '/game#theGame';
+        this.downLink = '/game#game';
         this.thisHeading = 'Our Game';
 
         this.pageTitle = ' Game';
@@ -115,6 +115,22 @@ export class LandingComponent implements OnInit {
         this.pageTitle = ' Us';
         this.pagePrefix = 'About';
         this.pageDescription = 'Let\'s introduce ourselves, shall we?';
+        break;
+      }
+
+      case '/movie': {
+        this.leftLink = '/projects';
+        this.leftPage = 'Project X';
+
+        this.rightLink = '/game';
+        this.rightPage = 'Game';
+
+        this.downLink = '/horror#horror';
+        this.thisHeading = 'Horror Short';
+
+        this.pageTitle = ' Strings Attached';
+        this.pagePrefix = 'No';
+        this.pageDescription = 'I\'ve got no strings to hold me down';
         break;
       }
 

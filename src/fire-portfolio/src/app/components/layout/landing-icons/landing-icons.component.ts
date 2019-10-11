@@ -57,6 +57,20 @@ export class LandingIconsComponent implements OnInit {
         break;
       }
 
+      case '/erp': {
+        this.left = '';
+        this.center = '<img src="https://img.icons8.com/wired/64/000000/web.png" alt="desktop">';
+        this.right = '';
+        break;
+      }
+      
+      case '/movie': {
+        this.left = '';
+        this.center = '<img src="https://img.icons8.com/pastel-glyph/64/000000/old-time-camera--v2.png" alt="film">';
+        this.right = '';
+        break;
+      }
+
       default: {
         this.left = '<img src="https://img.icons8.com/pastel-glyph/64/000000/old-time-camera--v2.png" alt="films">';
         this.center = '<img src="https://img.icons8.com/wired/64/000000/controller.png" alt="games">';
