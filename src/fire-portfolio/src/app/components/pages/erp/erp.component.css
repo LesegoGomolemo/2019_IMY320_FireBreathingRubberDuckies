@@ -18,6 +18,13 @@
 
 p {
     color: aliceblue;
+    text-align: left;
+    font-size: 16px;
+}
+
+h3 {
+    color: aliceblue;
+    align-self: center;
 }
 
 .content {
