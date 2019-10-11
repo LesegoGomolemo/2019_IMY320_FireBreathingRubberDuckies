@@ -11,12 +11,13 @@ import { MovieComponent } from './components/pages/movie/movie.component';
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full', data: { animation: 'HomePage'} },
   { path: 'home', component: HomeComponent, pathMatch: 'full', data: { animation: 'HomePage'} },
-  { path: 'project', component: ProjectsComponent, data: { animation: 'ProjectsPage'} },
+  // { path: 'project', component: ProjectsComponent, data: { animation: 'ProjectsPage'} },
   { path: 'game', component: GameComponent, data: {animation: 'FilterPage'} },
   { path: 'botic', component: BoticComponent, data: {animation: 'FilterPage'} },
-  { path: 'about', component: AboutComponent},
-  { path: 'erp', component: ErpComponent },
-  { path: 'movie', component: MovieComponent }
+  { path: 'about', component: AboutComponent, data: {animation: 'FilterPage'} },
+  { path: 'erp', component: ErpComponent, data: {animation: 'FilterPage'} },
+  { path: 'movie', component: MovieComponent, data: {animation: 'FilterPage'} },
+  { path: '**', component: HomeComponent, data: { animation: 'FilterPage'} }
 ];
 
 @NgModule({

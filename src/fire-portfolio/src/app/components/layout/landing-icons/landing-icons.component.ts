@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 })
 export class LandingIconsComponent implements OnInit {
 
- public film: string;
- public gaming: string;
- public desktop: string;
+ public left: string;
+ public center: string;
+ public right: string;
 
   constructor(private router: Router) { }
 
@@ -23,30 +23,51 @@ export class LandingIconsComponent implements OnInit {
   private getIcons() {
     switch (this.router.url) {
       case '/': {
-        this.film = '<img src="https://img.icons8.com/pastel-glyph/64/000000/old-time-camera--v2.png" alt="films">';
-        this.gaming = '<img src="https://img.icons8.com/wired/64/000000/controller.png" alt="games">';
-        this.desktop = '<img src="https://img.icons8.com/wired/64/000000/web.png" alt="desktop">';
+        this.left = '<img src="https://img.icons8.com/pastel-glyph/64/000000/old-time-camera--v2.png" alt="films">';
+        this.center = '<img src="https://img.icons8.com/wired/64/000000/controller.png" alt="games">';
+        this.right = '<img src="https://img.icons8.com/wired/64/000000/web.png" alt="desktop">';
         break;
       }
 
       case '/home': {
-        this.film = '<img src="https://img.icons8.com/pastel-glyph/64/000000/old-time-camera--v2.png" alt="films">';
-        this.gaming = '<img src="https://img.icons8.com/wired/64/000000/controller.png" alt="games">';
-        this.desktop = '<img src="https://img.icons8.com/wired/64/000000/web.png" alt="desktop">';
+        this.left = '<img src="https://img.icons8.com/pastel-glyph/64/000000/old-time-camera--v2.png" alt="films">';
+        this.center = '<img src="https://img.icons8.com/wired/64/000000/controller.png" alt="games">';
+        this.right = '<img src="https://img.icons8.com/wired/64/000000/web.png" alt="desktop">';
         break;
       }
 
       case '/game': {
-        this.film = '';
-        this.gaming = '<img src="https://img.icons8.com/wired/64/000000/controller.png" alt="games">';
-        this.desktop = '';
+        this.left = '';
+        this.center = '<img src="https://img.icons8.com/wired/64/000000/controller.png" alt="games">';
+        this.right = '';
+        break;
+      }
+
+      case '/about': {
+        this.left = '';
+        this.center = '<img src="https://img.icons8.com/dotty/80/000000/business-group.png" alt="about">';
+        this.right = '';
+        break;
+      }
+
+      case '/erp': {
+        this.left = '';
+        this.center = '<img src="https://img.icons8.com/wired/64/000000/web.png" alt="desktop">';
+        this.right = '';
+        break;
+      }
+      
+      case '/movie': {
+        this.left = '';
+        this.center = '<img src="https://img.icons8.com/pastel-glyph/64/000000/old-time-camera--v2.png" alt="film">';
+        this.right = '';
         break;
       }
 
       default: {
-        this.film = '<img src="https://img.icons8.com/pastel-glyph/64/000000/old-time-camera--v2.png" alt="films">';
-        this.gaming = '<img src="https://img.icons8.com/wired/64/000000/controller.png" alt="games">';
-        this.desktop = '<img src="https://img.icons8.com/wired/64/000000/web.png" alt="desktop">';
+        this.left = '<img src="https://img.icons8.com/pastel-glyph/64/000000/old-time-camera--v2.png" alt="films">';
+        this.center = '<img src="https://img.icons8.com/wired/64/000000/controller.png" alt="games">';
+        this.right = '<img src="https://img.icons8.com/wired/64/000000/web.png" alt="desktop">';
       }
     }
   }

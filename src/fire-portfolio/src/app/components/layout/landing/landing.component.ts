@@ -55,18 +55,66 @@ export class LandingComponent implements OnInit {
       }
 
       case '/game': {
-        this.leftLink = '/horror';
+        this.leftLink = '/movie';
         this.leftPage = 'Horror Short';
 
         this.rightLink = '/home';
         this.rightPage = 'Welcome';
 
-        this.downLink = '/game#theGame';
+        this.downLink = '/game#game';
         this.thisHeading = 'Our Game';
 
         this.pageTitle = ' Game';
         this.pagePrefix = 'Our';
         this.pageDescription = ' This is for our nonexistent video game.';
+        break;
+      }
+        
+      case '/erp': {
+        this.leftLink = '/botic';
+        this.leftPage = 'Botic';
+
+        this.rightLink = '/about';
+        this.rightPage = 'About Us';
+
+        this.downLink = '/erp#Goal';
+        this.thisHeading = 'ERP Ranger App';
+
+        this.pageTitle = ' Ranger Application';
+        this.pagePrefix = 'ERP';
+        this.pageDescription = 'This is the ERP Ranger Application project.';
+        break;
+      }
+        
+      case '/about': {
+        this.leftLink = '/erp';
+        this.leftPage = 'ERP Ranger';
+
+        this.rightLink = '/projects';
+        this.rightPage = 'Project X';
+
+        this.downLink = '/about#team';
+        this.thisHeading = 'About Us';
+
+        this.pageTitle = ' Us';
+        this.pagePrefix = 'About';
+        this.pageDescription = 'Let\'s introduce ourselves, shall we?';
+        break;
+      }
+
+      case '/movie': {
+        this.leftLink = '/projects';
+        this.leftPage = 'Project X';
+
+        this.rightLink = '/game';
+        this.rightPage = 'Game';
+
+        this.downLink = '/horror#horror';
+        this.thisHeading = 'Horror Short';
+
+        this.pageTitle = ' Strings Attached';
+        this.pagePrefix = 'No';
+        this.pageDescription = 'I\'ve got no strings to hold me down';
         break;
       }
 
